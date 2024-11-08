@@ -7,9 +7,15 @@ function toggleMenu() {
     const nav = document.getElementById('my-nav');
     const hamburger = document.getElementById('menu-icon');
     
-    // Check if the clicked area is outside the hamburger menu or the nav
     if (!hamburger.contains(event.target) && !nav.contains(event.target)) {
-      nav.classList.remove('show'); // Close the menu
+      nav.classList.remove('show'); 
+    }
+  });
+  document.addEventListener('scroll', function() {
+    const nav = document.getElementById('my-nav');
+    
+    if (nav.classList.contains('show')) {
+      nav.classList.remove('show'); 
     }
   });
 
@@ -17,6 +23,6 @@ function toggleMenu() {
   menuItems.forEach(item => {
     item.addEventListener('click', function() {
       const nav = document.getElementById('my-nav');
-      nav.classList.remove('show'); // Close the menu after clicking a link
+      nav.classList.remove('show'); 
     });
   });
