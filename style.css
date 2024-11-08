@@ -414,7 +414,8 @@ nav {
 
 .footer{
     padding: 30px 20px;
-    background:linear-gradient(to bottom,rgb(231, 231, 231) 70%,rgb(102, 196, 237))
+    background:linear-gradient(to bottom,rgb(231, 231, 231) 70%,rgb(102, 196, 237));
+    overflow:hidden;
 }
 
 .footer-grid{
