@@ -53,7 +53,8 @@ nav {
     
 .nv-left {
     display: none; 
-    position: absolute;
+    position:fixed;
+    z-index: 2000;
     top: 40px; 
     right: 0;
     width: 150px;
