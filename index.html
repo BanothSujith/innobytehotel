@@ -21,20 +21,32 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#rooms">Rooms</a></li>
                     <li><a href="#service">Service</a></li>
-                    <li><a href="#gallary">Gallery</a></li> 
+                    <li><a href="#gallery">Gallery</a></li> 
                     <li><a href="#contact">Contact</a></li>
                     <li class='book'><a href="https://api.whatsapp.com/send?phone=919007062180">Book</a></li>
                 </ul>
             </div>
         </nav>
-       <div class="hamburger">
-        <div class="ham-right">
-          <h5>Kingsukh Guest House</h5>
-           </div>
-        <div>
-        <img src="./img/Hamburger.svg"/>
+        <div class="hamburger">
+          <div class="ham-right">
+            <h5>Kingsukh Guest House</h5>
+          </div>
+          <div>
+            <img src="./img/Hamburger.svg" id="menu-icon" onclick="toggleMenu()" />
+          </div>
         </div>
-       </div>
+        <div class="nv-left" id="my-nav">
+          <ul class="nv-list">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#rooms" class="nav-item">Rooms</a></li>
+            <li><a href="#service"class="nav-item">Service</a></li>
+            <li><a href="#gallery" class="nav-item">Gallery</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+            <li class='book' class="nav-item"><a href="https://api.whatsapp.com/send?phone=919007062180">Book</a></li>
+          </ul>
+        </div>        
+       
     <div class="home" id="home">
         <div class="home-title">Simple-Unique-Friendly</div>
         <hr width="50%"/>
@@ -127,7 +139,7 @@
         </div>
     </div>
  <!--Gallary-->
- <div class="gallary" id="gallary">
+ <div class="gallary" id="gallery">
     <div class="gallery-heding">
         Gallary.
     </div>
@@ -239,5 +251,6 @@
       Copyright © 2024 Kingsukh Guest House. All rights reserved.
     </div>
   </footer>
+  <script src="./scrript.js" defer></script>
 </body>
 </html>

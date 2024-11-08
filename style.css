@@ -47,10 +47,27 @@ nav {
 .nav-list a:hover {
     color: #007BFF; 
 }
-.hamburger{
- display: none;
-}
-
+.hamburger {
+    display: none;
+    }
+    
+.nv-left {
+    display: none; 
+    position: absolute;
+    top: 40px; 
+    right: 0;
+    width: 150px;
+    height:fit-content;
+    background: linear-gradient(to right,white,rgb(187, 188, 188),rgb(92, 206, 238));
+    z-index: 100;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .nv-left.show {
+    display: block;
+  }
+ 
 .home {
     display: flex;
     flex-direction: column;
